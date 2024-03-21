@@ -13,6 +13,16 @@ int binary_search(int arr[], int left, int right, int key) {
     return -1; 
 }
 
-int main() {
-
+int main() 
+{
+    int n,key,t;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&key);
+    t= binary_search(arr,0,n,key);
+    printf("%d",t);
 }
